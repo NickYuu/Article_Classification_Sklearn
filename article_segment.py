@@ -45,7 +45,7 @@ def article_segment(article_path, seg_path):
 
         # 有時候mac會產生 `.DS_Store`
         if mydir[0] == '.':
-            print(mydir)
+            print('#' + mydir)
             continue
 
         # 如果分詞文件夾不存在創建一個
@@ -61,7 +61,7 @@ def article_segment(article_path, seg_path):
                 os.remove(class_path + file_path)
 
             if file_path[0] == '.':
-                print('###', file_path)
+                print('##', file_path)
                 continue
 
             # 文章路徑  EX: train_corpus/art/21.txt
